@@ -22,6 +22,8 @@ cd ../case
 1. First way
 ```bash
 blockMesh
+buongiornoSimpleFoam
+or
 drugDeliveryBuongiornoPimpleFoam
 ```
 
