@@ -1,0 +1,39 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | foam-extend: Open Source CFD                    |
+|  \\    /   O peration     | Version:     4.1                                |
+|   \\  /    A nd           | Web:         http://www.foam-extend.org         |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+transportModel  Brinkman;//Newtonian;
+BrinkmanCoeffs{}
+
+nu              nu [0 2 -1 0 0 0 0] 		8.53e-07;
+Pr		Pr [0 0 0 0 0 0 0] 		5.82;
+Prt		Prt [0 0 0 0 0 0 0] 		0.85;
+Sct		Sct [0 0 0 0 0 0 0] 		0.85;
+
+alphaSwitch	on;//off
+
+// Base fluid properties
+rho_f		rho_f [1 -3 0 0 0 0 0]		996.5;
+kappa_f		kappa_f [1 1 -3 -1 0 0 0]	0.6105;
+Cp_f		Cp_f [0 2 -2 -1 0 0 0]		4181.0;
+mu_f		mu_f [1 -1 -1 0 0 0 0]		8.5e-4;
+
+// Nanoparticle properties
+rho_np		rho_np [1 -3 0 0 0 0 0]		3970.0;
+kappa_np	kappa_np [1 1 -3 -1 0 0 0]	25.0;
+Cp_np		Cp_np [0 2 -2 -1 0 0 0]		703.0;
+d_np		d_np [0 1 0 0 0 0 0]		55e-9;
+
+// ************************************************************************* //
