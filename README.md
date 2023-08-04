@@ -23,8 +23,6 @@ cd ../case
 ```bash
 blockMesh
 buongiornoSimpleFoam
-or
-drugDeliveryBuongiornoPimpleFoam
 ```
 
 2. Second way
