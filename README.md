@@ -3,7 +3,7 @@ This is a boundary condition for Buongiorno model on walls written based on foam
 
 
 ## Mathematical Relationships
-$$ {\nabla \phi} = q"_{\phi} - h_o (\phi - \phi_o) -{D_T \over D_B} {\nabla \phi}$$
+$$ {\nabla \phi} = q"_{\phi} - h_o (\phi - \phi_o) - {1 \over T} {D_T \over D_B} {\nabla \phi}$$
 
 
 ## Installation
