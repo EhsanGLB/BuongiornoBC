@@ -5,6 +5,8 @@ This is a boundary condition for Buongiorno model on walls written based on foam
 ## Mathematical Relationships
 $$ {\nabla \phi} = q"_{\phi} - h_o (\phi - \phi_o) - {1 \over T} {D_T \over D_B} {\nabla \phi}$$
 
+Which $\phi$, $q"$, $h_o$, $\phi_o$, $T$, $D_T$, and $D_B$ are nanoparticle concentration, external mass flux, convective mass transfer coefficient, external nanoparticle concentration, temperature, Brownian diffusion, and thermophoresis diffusion, respectively.
+
 
 ## Installation
 It is working on foam-extend-4.1 for buongiornoSimpleFoam and drugDeliveryBuongiornoPimpleFoam solvers.
